@@ -181,7 +181,7 @@ void cartoonTransform(Mat &Frame,Mat &output,int type){
             eye_center.y = faces[i].y + eyes[j].y + eyes[j].height*0.5;
             eye_radius = cvRound( (eyes[j].width + eyes[i].height)*0.25 );
             //cout <<"radius "<<eye_radius<<endl;
-            circle( output, eye_center, eye_radius, Scalar( 0 , 0, 255), 3, 8, 0 );
+            //circle( output, eye_center, eye_radius, Scalar( 0 , 0, 255), 3, 8, 0 );
             if(eye_radius > 50){
                 right_eye_pos_x = eye_center.x+eye_radius*0.55;
                 right_eye_pos_y = eye_center.y-eye_radius*0.8;
@@ -444,7 +444,7 @@ void faceLandmarkDetection(dlib::array2d<unsigned char>& img, dlib::shape_predic
     {
         float x=shape.part(i).x();
         float y=shape.part(i).y();
-        landmark.push_back(Point2f(x,y));		
+        landmark.push_back(Point2f(x,y));       
     }
     
     
@@ -483,7 +483,7 @@ void delaunayTriangulation(const std::vector<Point2f>& hull,std::vector<correspo
                 delaunayTri.push_back(ind);
         }
        
-    }	
+    }   
     
     
 }
@@ -539,10 +539,10 @@ void faceSwap(Mat &Frame){
     dlib::array2d<unsigned char> imgDlib1,imgDlib2;
     imwrite("/Users/sam/Desktop/course/cv/final_project/frame.png",Frame);
     
-    dlib::load_image(imgDlib1,"/Users/sam/Desktop/course/cv/final_project/obama.png");
+    dlib::load_image(imgDlib1,"/Users/sam/Desktop/course/cv/final_project/gordan.png");
     dlib::load_image(imgDlib2,"/Users/sam/Desktop/course/cv/final_project/frame.png" );
     
-    Mat imgCV1 = imread("/Users/sam/Desktop/course/cv/final_project/obama.png");
+    Mat imgCV1 = imread("/Users/sam/Desktop/course/cv/final_project/gordan.png");
     Mat imgCV2 = imread("/Users/sam/Desktop/course/cv/final_project/frame.png");
     if(!imgCV1.data || !imgCV2.data)
     {
@@ -589,7 +589,7 @@ void faceSwap(Mat &Frame){
             t2.push_back(hull2[corpd.index[j]]);
         }
         
-        warpTriangle(imgCV1,imgCV1Warped,t1,t2);			
+        warpTriangle(imgCV1,imgCV1Warped,t1,t2);            
     }
     //------------------------step 5. clone seamlessly -----------------------------------------------
     
