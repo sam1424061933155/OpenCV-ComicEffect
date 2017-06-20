@@ -76,7 +76,11 @@ void cartoonTransform(Mat &Frame,Mat &output){
             }
         }
     }
+<<<<<<< HEAD
     cvtColor(output, output, CV_BGR2GRAY);
+=======
+    //cvtColor(output, output, CV_BGR2GRAY);
+>>>>>>> 773410511f90176b153239e0aa4f1dd840eb5d7b
     threshold(output, output, 85, 255, CV_THRESH_BINARY);
     
     Point ball;
@@ -109,14 +113,24 @@ void cartoonTransform(Mat &Frame,Mat &output){
             ball = center;
         }
     }
+<<<<<<< HEAD
     Mat glass = imread("/Users/sam/Desktop/logo.png");
     if(!glass.data){
         cout<<"not read glass"<<endl;
+=======
+    Mat glass = imread("/Users/sam/Desktop/mut.png");
+    if(!glass.data){
+        cout<<"not read logo"<<endl;
+>>>>>>> 773410511f90176b153239e0aa4f1dd840eb5d7b
     }
     //cout << "col "<<output.cols<<" row "<<output.rows<<endl;
     //cout << "col "<<glass.cols<<" row "<<glass.rows<<endl;
     Mat imageROI=output(Rect(ball.x,ball.y,glass.cols,glass.rows)); //獲取感興趣區域，即logo要放置的區域
+<<<<<<< HEAD
     Mat mask= imread("/Users/sam/Desktop/logo.png",0);
+=======
+    Mat mask= imread("/Users/sam/Desktop/mut.png",0);
+>>>>>>> 773410511f90176b153239e0aa4f1dd840eb5d7b
     glass.copyTo(imageROI,mask);
    
     
@@ -145,8 +159,13 @@ int main(int argc, const char * argv[]) {
     }
     
     // 调整摄像头的输出分辨率
+<<<<<<< HEAD
     camera.set(CV_CAP_PROP_FRAME_WIDTH, 640);
     camera.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+=======
+    camera.set(CV_CAP_PROP_FRAME_WIDTH, 1000);
+    camera.set(CV_CAP_PROP_FRAME_HEIGHT, 1000);
+>>>>>>> 773410511f90176b153239e0aa4f1dd840eb5d7b
     
     face_cascade.load(face_cascade_name);
     eyes_cascade.load(eyes_cascade_name);
