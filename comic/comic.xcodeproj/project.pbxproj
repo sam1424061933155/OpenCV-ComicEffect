@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2284850A1EF80E340036E05D /* handGesture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228485071EF80E340036E05D /* handGesture.cpp */; };
+		2284850F1EF80E520036E05D /* myImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2284850C1EF80E520036E05D /* myImage.cpp */; };
+		228485101EF80E520036E05D /* roi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2284850D1EF80E520036E05D /* roi.cpp */; };
 		22B491151EE6DBA3004C9EFD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B491141EE6DBA3004C9EFD /* main.cpp */; };
 		22B491C81EE6DCFC004C9EFD /* libopencv_aruco.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B491291EE6DCFB004C9EFD /* libopencv_aruco.3.2.0.dylib */; };
 		22B491C91EE6DCFC004C9EFD /* libopencv_aruco.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B4912A1EE6DCFB004C9EFD /* libopencv_aruco.3.2.0.dylib */; };
@@ -153,6 +156,7 @@
 		22B492561EE6DCFD004C9EFD /* libtiffxx.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B491B71EE6DCFC004C9EFD /* libtiffxx.5.dylib */; };
 		22B492571EE6DCFD004C9EFD /* libtiffxx.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B491B81EE6DCFC004C9EFD /* libtiffxx.5.dylib */; };
 		22B492581EE6DCFD004C9EFD /* libtk8.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B491B91EE6DCFC004C9EFD /* libtk8.6.dylib */; };
+		22DC826B1EF5A21A0000078D /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DC826A1EF5A21A0000078D /* source.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -168,6 +172,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		228485071EF80E340036E05D /* handGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = handGesture.cpp; sourceTree = "<group>"; };
+		228485081EF80E340036E05D /* handGesture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = handGesture.hpp; sourceTree = "<group>"; };
+		228485091EF80E340036E05D /* myImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = myImage.hpp; sourceTree = "<group>"; };
+		2284850B1EF80E520036E05D /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
+		2284850C1EF80E520036E05D /* myImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myImage.cpp; sourceTree = "<group>"; };
+		2284850D1EF80E520036E05D /* roi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = roi.cpp; sourceTree = "<group>"; };
+		2284850E1EF80E520036E05D /* roi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = roi.hpp; sourceTree = "<group>"; };
 		22B491111EE6DBA3004C9EFD /* comic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = comic; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B491141EE6DBA3004C9EFD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22B491291EE6DCFB004C9EFD /* libopencv_aruco.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_aruco.3.2.0.dylib; path = ../../../../../../../../usr/local/lib/libopencv_aruco.3.2.0.dylib; sourceTree = "<group>"; };
@@ -315,6 +326,7 @@
 		22B491B71EE6DCFC004C9EFD /* libtiffxx.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtiffxx.5.dylib; path = ../../../../../../../../usr/local/Cellar/libtiff/4.0.7_3/lib/libtiffxx.5.dylib; sourceTree = "<group>"; };
 		22B491B81EE6DCFC004C9EFD /* libtiffxx.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtiffxx.5.dylib; path = ../../../../../../../../usr/local/Cellar/libtiff/4.0.7_3/lib/libtiffxx.5.dylib; sourceTree = "<group>"; };
 		22B491B91EE6DCFC004C9EFD /* libtk8.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtk8.6.dylib; path = ../../../../../../../../usr/local/lib/libtk8.6.dylib; sourceTree = "<group>"; };
+		22DC826A1EF5A21A0000078D /* source.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = source.cpp; path = "../../../../../cv_env/dlib-19.4/dlib/all/source.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +504,14 @@
 		22B491131EE6DBA3004C9EFD /* comic */ = {
 			isa = PBXGroup;
 			children = (
+				2284850B1EF80E520036E05D /* main.hpp */,
+				2284850C1EF80E520036E05D /* myImage.cpp */,
+				2284850D1EF80E520036E05D /* roi.cpp */,
+				2284850E1EF80E520036E05D /* roi.hpp */,
+				228485071EF80E340036E05D /* handGesture.cpp */,
+				228485081EF80E340036E05D /* handGesture.hpp */,
+				228485091EF80E340036E05D /* myImage.hpp */,
+				22DC826A1EF5A21A0000078D /* source.cpp */,
 				22B491141EE6DBA3004C9EFD /* main.cpp */,
 				22B491291EE6DCFB004C9EFD /* libopencv_aruco.3.2.0.dylib */,
 				22B4912A1EE6DCFB004C9EFD /* libopencv_aruco.3.2.0.dylib */,
@@ -699,7 +719,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DC826B1EF5A21A0000078D /* source.cpp in Sources */,
+				2284850F1EF80E520036E05D /* myImage.cpp in Sources */,
+				228485101EF80E520036E05D /* roi.cpp in Sources */,
 				22B491151EE6DBA3004C9EFD /* main.cpp in Sources */,
+				2284850A1EF80E340036E05D /* handGesture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,8 +823,16 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/include/opencv,
+					"/Users/sam/Desktop/cv_env/dlib-19.4/",
+					/opt/X11/include,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/X11/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DDLIB_PNG_SUPPORT";
+				OTHER_LDFLAGS = "-lX11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -808,11 +840,20 @@
 		22B4911A1EE6DBA3004C9EFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = DLIB_PNG_SUPPORT;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/include/opencv,
+					"/Users/sam/Desktop/cv_env/dlib-19.4/",
+					/opt/X11/include,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/X11/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DDLIB_PNG_SUPPORT";
+				OTHER_LDFLAGS = "-lX11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -836,6 +877,7 @@
 				22B4911A1EE6DBA3004C9EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
